@@ -50,12 +50,29 @@ h1 {
   letter-spacing: 0;
 }
 
-.headline-main,
 .headline-sub {
   display: block;
 }
 
+.headline-product {
+  display: block;
+  text-align: center;
+}
+
+.headline-mascot {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: clamp(10px, 1.1vw, 16px);
+  width: 1.8em;
+  height: auto;
+}
+
+.headline-main {
+  display: block;
+}
+
 .headline-keep {
+  display: block;
   white-space: nowrap;
 }
 
@@ -206,5 +223,13 @@ h1 {
 
   .browser-shot img {
     border-radius: 12px;
+  }
+}
+
+@media (max-width: 420px) {
+  .headline-mascot {
+    width: 1.55em;
+    margin-right: 8px;
+    margin-top: 0.08em;
   }
 }
